@@ -1,6 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-
+import myPic from '../assets/profile.png'; 
 export default function Hero() {
   return (
     <section
@@ -79,9 +79,7 @@ export default function Hero() {
                      transition-all duration-500 hover:shadow-sky-200/50 
                      dark:hover:shadow-sky-500/20 hover:scale-[1.02]"
         >
-          <img
-            src="src/assets/profile.png"
-            alt="Profile"
+          <img src={myPic} alt="Profile"
             className="w-full h-auto rounded-3xl object-cover object-top 
                        transition-transform duration-700 hover:scale-105"
           />
