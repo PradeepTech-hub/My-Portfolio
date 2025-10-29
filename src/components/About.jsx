@@ -1,4 +1,5 @@
 import React from "react";
+
 import {
   FaReact,
   FaNodeJs,
@@ -31,7 +32,7 @@ export default function About() {
   const bottomRowLoop = [...bottomRow, ...bottomRow];
 
   return (
-    <section id="about" className="mt-20 text-slate-800 dark:text-slate-300">
+    <section id="about" className="mt-20 mb- text-slate-800 dark:text-slate-300">
       <div className="max-w-5xl mx-auto px-6 sm:px-8 space-y-8">
         <h3 className="text-3xl font-bold text-center text-slate-900 dark:text-white">
           About Me
@@ -79,7 +80,7 @@ export default function About() {
           </div>
 
           {/* Bottom row (increased top margin) */}
-          <div className="relative w-full overflow-hidden mt-10 sm:mt-12">
+          <div className="relative w-full overflow-hidden mt-10 mb-7 sm:mt-12">
             <div className="flex whitespace-nowrap animate-scrollRight">
               {bottomRowLoop.map((tech, i) => (
                 <div
